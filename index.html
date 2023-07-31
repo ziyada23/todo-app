@@ -3,10 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>todo list</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+
+    <div id="wrapper">
+        <div id="auth">
+            <h1 class="heading" id="auth-title">Authorization</h1>
+            <h2 class="sub-heading" id="auth-type">Register</h2>
+
+            <div id="auth-content">
+                <form  class="active" id="register-form">
+                    <input type="tel" id="register-phone" placeholder="Phone number">
+                    <input type="text" id="register-name" placeholder="Username">
+                    <input type="password" id="register-password" placeholder="Password">
+                    <button class="btn">Login</button>
+                    <span class="auth-changer" id="change-to-login">Create an account</span>
+                </form>
+
+                <form  id="login-form">
+                    <input type="tel" id="register-phone" placeholder="Phone number">
+                    <input type="password" id="register-password" placeholder="Password">
+                    <button class="btn">Register</button>
+                    <span class="auth-changer" id="change-to-register">Already have an account? Sign in</span>
+                </form>
+            </div>
+        </div>
+        <div id="app"></div>
+    </div>
+
     <script type="module" src="./app.js"></script>
+    <script type="module"  src="./auth.js"></script>
 </body>
 </html>
