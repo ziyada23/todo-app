@@ -6,6 +6,8 @@
     <title>todo list</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5/dark.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
 
@@ -16,18 +18,19 @@
 
             <div id="auth-content">
                 <form  class="active" id="register-form">
-                    <input type="tel" id="register-phone" placeholder="Phone number">
-                    <input type="text" id="register-name" placeholder="Username">
-                    <input type="password" id="register-password" placeholder="Password">
-                    <button class="btn">Login</button>
-                    <span class="auth-changer" id="change-to-login">Create an account</span>
+                    <input required type="tel" id="register-phone" placeholder="Phone number">
+                    <input required type="text" id="register-name" placeholder="Username">
+                    <input required type="password" id="register-password" placeholder="Password">
+                    <button class="btn">Register</button>
+                    
+                    <span class="auth-changer" id="change-to-login">Already have an account? Sign in</span>
                 </form>
 
                 <form  id="login-form">
-                    <input type="tel" id="register-phone" placeholder="Phone number">
-                    <input type="password" id="register-password" placeholder="Password">
-                    <button class="btn">Register</button>
-                    <span class="auth-changer" id="change-to-register">Already have an account? Sign in</span>
+                    <input type="tel" id="login-phone" placeholder="Phone number">
+                    <input type="password" id="login-password" placeholder="Password">
+                    <button class="btn">Login</button>
+                    <span class="auth-changer" id="change-to-register">Create an account</span>
                 </form>
             </div>
         </div>
